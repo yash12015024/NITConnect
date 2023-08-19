@@ -1,0 +1,41 @@
+.widget {
+    flex: 0.2;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    height: fit-content;
+    background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.widget:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 8px 8px;
+}
+
+
+.widget__header {
+    border-bottom: 1px solid #cfcfcf;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.widget__header>h5 {
+    color: rgb(80, 80, 80);
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.widget__header>h5:before {
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+.widget__contents {
+    display: flex;
+    flex-direction: column;
+}
